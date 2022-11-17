@@ -1,0 +1,20 @@
+Sayı Dizimiz = [22,27,16,2,18,6]
+
+1.Adım [2,27,16,22,18,6] # 2'yi bulduktan sonra dizinin başındaki elemanla yer değiştirdi
+2.Adım [2,6,16,22,18,27] # 6'yı bulduktan sonra dizinin 2.sırasına attı
+3.Adım [2,6,16,22,18,27] # 16 zaten olması gereken yerdeydi görünümde değişiklik yok ama işlem yapldı
+4.Adım [2,6,16,18,22,27] # 18 22'yle yer değiştirdi
+5.Adım [2,6,16,18,22,27] # 22 tekrar aynı yere kondu
+
+Big-O gösterimi:  ((n+1)*n)/2 --> n^2
+
+Dizi sıralandıktan sonra 18 ortada olduğu için average case olur.
+
+-----------------------------------------------------------------------------------------------------
+
+2.Dizi = [7,3,5,8,2,9,4,15,6]
+
+1.Adım [2,3,5,8,7,9,4,15,6] # Bu adımda en küçük olan 2 listenin başındaki 7 ile yer değiştirdi
+2.Adım [2,3,5,8,7,9,4,15,6] # Bu adımda 2 yok sayılıp en küüçük eleman olan 3 baştaki yerinde sabit kaldı
+3.Adım [2,3,4,8,7,9,5,15,6] # Bu adımda 4, 5 ile yer değiştirdi
+4.Adım [2,3,4,5,7,9,8,15,6] # Bu adımda 5, 8 ile yer değiştirdi
